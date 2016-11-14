@@ -11,7 +11,7 @@ body {
 * {
   font-family: @text-font;
 }
-h1, h2 {
+h1, h2, h3 {
   font-family: @headline-font;
 }
 h1 {
@@ -23,14 +23,16 @@ h2{
 }
 h3 {
   color: @base;
-  font-weight: 500;
+  font-weight: 400;
 }
 h4 {
   font-size: 20px;
   font-weight: 400;
 }
-p {
-  color: @base;
+a, p {
+  color: darken(@base, 30%);
+  font-weight: 300;
+  font-size: 15px;
 }
 #top {
   background-color: @base;
@@ -42,7 +44,7 @@ p {
   text-align: center;
   margin-bottom: 15px;
 }
-@media (min-width: 500px) {
+@media (min-width: 760px) {
   #jumbo {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -52,20 +54,28 @@ p {
     padding-top: 6vh;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 760px) {
   .jumbo-img {
     width: 80%;
     margin-left: 10%;
     margin-bottom: 25px;
   }
+  #footer {
+    display: none;
+  }
+  .navbar-brand {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .btn {
   border-radius: 20px;
-  font-size: 20px;
+  font-weight: 300;
   padding: 5px 30px;
 }
 .btn-primary {
   background-color: @text;
+  font-size: 20px;
   color: @base;
   border: 2px solid @text;
 }
@@ -73,6 +83,18 @@ p {
   background-color: transparent;
   color: @text;
   border: 2px solid @text;
+}
+.btn-info {
+  background-color: @base;
+  font-size: 15px;
+  color: @text;
+  border: 2px solid @base;
+}
+
+.btn-info:hover, .btn-info:active, .btn-info:active:focus, .btn-info:focus {
+  background-color: lighten(@base, 5%);
+  color: @text;
+  border: 2px solid lighten(@base, 5%);
 }
 .marginless {
   margin-top: 0;
@@ -87,6 +109,9 @@ p {
    .navbar-brand {
      color: @text;
    }
+   .navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus, .navbar-brand:active:focus {
+     color: @text;
+   }
    .navbar-text {
      color: @text;
    }
@@ -94,6 +119,24 @@ p {
      color: @text;
    }
    .navbar-nav>li>a:hover, .navbar-nav>li>a:active, .navbar-nav>li>a:focus, .navbar-nav>li>a:active:focus {
-     color: lighten(@base, 80%);
+     color: @text;
+     text-decoration: underline;
    }
+}
+.item {
+  border-left: 2px solid @base;
+  padding-left: 10px;
+}
+.item-title {
+  margin-bottom: 3px;
+}
+#footer {
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+  bottom: 0;
+  background-color: @base;
+  p, a {
+    color: @text;
+  }
 }
