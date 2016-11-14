@@ -6,7 +6,7 @@
 @text-font: 'Rubik', sans-serif;
 
 body {
-  background-color: @back;
+  background-color: @base;
 }
 * {
   font-family: @text-font;
@@ -29,20 +29,29 @@ h4 {
   font-size: 20px;
   font-weight: 400;
 }
-a, p {
+p {
   color: darken(@base, 30%);
   font-weight: 300;
   font-size: 15px;
+}
+a {
+  font-weight: 300;
+  font-size: 15px;
+  color: @base;
 }
 #top {
   background-color: @base;
   color: @text;
 }
+#main {
+  background-color: @back;
+  padding-top: 15px;
+  padding-bottom: 100px;
+}
 #jumbo {
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
-  margin-bottom: 15px;
 }
 @media (min-width: 760px) {
   #jumbo {
@@ -103,7 +112,8 @@ a, p {
   margin-bottom: 0;
 }
 .navbar-default {
-  background: transparent;
+  margin-bottom: 0;
+  background: @base;
   border: none;
   color: @text;
    .navbar-brand {
@@ -131,12 +141,11 @@ a, p {
   margin-bottom: 3px;
 }
 #footer {
-  position: absolute;
-  width: 100%;
   padding: 15px 0 25px 0;
   bottom: 0;
   background-color: @base;
   p, a {
     color: @text;
+    display: block;
   }
 }
