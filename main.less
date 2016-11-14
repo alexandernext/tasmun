@@ -1,5 +1,5 @@
 // out: main.css, sourcemap: true, compress: true
-@base: #00C3B5;
+@base: #26A65B;
 @text: white;
 @back: #fcfcfc;
 @headline-font: 'Scope One', serif;
@@ -8,25 +8,29 @@
 body {
   background-color: @back;
 }
-#top {
-  margin-bottom: 15px;
-}
 * {
   font-family: @text-font;
 }
-h1, h2, h3 {
+h1, h2 {
   font-family: @headline-font;
 }
 h1 {
   font-size: 50px;
 }
 h2{
-  font-size: 30px;
+  font-size: 35px;
   color: @base;
+}
+h3 {
+  color: @base;
+  font-weight: 500;
 }
 h4 {
   font-size: 20px;
   font-weight: 400;
+}
+p {
+  color: @base;
 }
 #top {
   background-color: @base;
@@ -36,6 +40,7 @@ h4 {
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
+  margin-bottom: 15px;
 }
 @media (min-width: 500px) {
   #jumbo {
@@ -44,7 +49,7 @@ h4 {
     text-align: left;
   }
   .jumbo-text {
-    padding-top: 8vh;
+    padding-top: 6vh;
   }
 }
 @media (max-width: 500px) {
@@ -91,22 +96,4 @@ h4 {
    .navbar-nav>li>a:hover, .navbar-nav>li>a:active, .navbar-nav>li>a:focus, .navbar-nav>li>a:active:focus {
      color: lighten(@base, 80%);
    }
-}
-
-
-.responsive-video {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 60px; overflow: hidden;
-}
-
-
-.responsive-video iframe,
-.responsive-video object,
-.responsive-video embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
 }
