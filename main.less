@@ -1,0 +1,112 @@
+// out: main.css, sourcemap: true, compress: true
+@base: #00C3B5;
+@text: white;
+@back: #fcfcfc;
+@headline-font: 'Scope One', serif;
+@text-font: 'Rubik', sans-serif;
+
+body {
+  background-color: @back;
+}
+#top {
+  margin-bottom: 15px;
+}
+* {
+  font-family: @text-font;
+}
+h1, h2, h3 {
+  font-family: @headline-font;
+}
+h1 {
+  font-size: 50px;
+}
+h2{
+  font-size: 30px;
+  color: @base;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+#top {
+  background-color: @base;
+  color: @text;
+}
+#jumbo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  #jumbo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: left;
+  }
+  .jumbo-text {
+    padding-top: 8vh;
+  }
+}
+@media (max-width: 500px) {
+  .jumbo-img {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 25px;
+  }
+}
+.btn {
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 5px 30px;
+}
+.btn-primary {
+  background-color: @text;
+  color: @base;
+  border: 2px solid @text;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:active:focus, .btn-primary:focus {
+  background-color: transparent;
+  color: @text;
+  border: 2px solid @text;
+}
+.marginless {
+  margin-top: 0;
+}
+.bottomless {
+  margin-bottom: 0;
+}
+.navbar-default {
+  background: transparent;
+  border: none;
+  color: @text;
+   .navbar-brand {
+     color: @text;
+   }
+   .navbar-text {
+     color: @text;
+   }
+   .navbar-nav li a {
+     color: @text;
+   }
+   .navbar-nav>li>a:hover, .navbar-nav>li>a:active, .navbar-nav>li>a:focus, .navbar-nav>li>a:active:focus {
+     color: lighten(@base, 80%);
+   }
+}
+
+
+.responsive-video {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 60px; overflow: hidden;
+}
+
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
