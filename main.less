@@ -104,6 +104,7 @@ a {
   font-family: @headline-font;
   border: 2px solid @secondary;
   padding: 5px 20px;
+  margin-bottom: 15px
 }
 
 .btn-info:hover, .btn-info:active, .btn-info:active:focus, .btn-info:focus {
@@ -122,8 +123,6 @@ a {
   background: transparent;
   border: none;
   color: @text;
-  position: fixed;
-  z-index: 100;
    .navbar-brand {
      color: @text;
    }
@@ -165,6 +164,7 @@ a {
   .item-content {
     vertical-align: middle;
     display: inline-block;
+    max-width: 80%;
     .item-title {
       color: @text-dark;
       margin-bottom: 3px;
@@ -190,4 +190,8 @@ a {
   margin-top: 20px;
   width: 100%;
   border-bottom: 1px dotted @base;
+}
+.image-rounded {
+  border-radius: 5px;
+  display: inline-block;
 }
