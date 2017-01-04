@@ -153,12 +153,13 @@ a {
   background: transparent;
   border: none;
   color: @text;
-   .navbar-brand {
-     color: @text;
-   }
-   .navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus, .navbar-brand:active:focus {
-     color: @text;
-   }
+    .navbar-brand {
+      padding: 10px;
+
+      .logo {
+        height: 20px;
+      }
+    }
    .navbar-text {
      color: @text;
    }
@@ -168,6 +169,16 @@ a {
    .navbar-nav>li>a:hover, .navbar-nav>li>a:active, .navbar-nav>li>a:focus, .navbar-nav>li>a:active:focus {
      color: @text;
      text-decoration: underline;
+   }
+   .navbar-nav>.open>a.dropdown-toggle, .navbar-nav>.open>a.dropdown-toggle:hover, .navbar-nav>.open>a.dropdown-toggle:active, .navbar-nav>.open>a.dropdown-toggle:focus, .navbar-nav>.open>a.dropdown-toggle:active:focus {
+     background-color: transparent;
+     color: @secondary;
+   }
+   .navbar-nav > .open > .dropdown-menu {
+     background-color: @base;
+     li>a:hover, li>a:focus, li>a:active, li>a:active:focus {
+       background-color: @secondary;
+     }
    }
 }
 .item {
@@ -224,7 +235,7 @@ a {
 .image-rounded {
   border-radius: 5px;
   display: inline-block;
-  
+
 }
 .modal {
   background-color: @back;
@@ -232,4 +243,7 @@ a {
   padding: 30px;
   margin: 15vh;
   z-index: 10000
+}
+.guides {
+  text-align: center;
 }
