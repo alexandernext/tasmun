@@ -7,6 +7,7 @@
 @headline-font: 'Graph', serif;
 @text-font: 'Klima', sans-serif;
 @bold-font: 'KlimaMedium', sans-serif;
+@italics-font: 'KlimaItalic', sans-serif;
 
 @font-face {
   font-family: 'Klima';
@@ -14,6 +15,15 @@
   src: url('assets/fonts/klima-regular-web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('assets/fonts/klima-regular-web.woff2') format('woff2'), /* Super Modern Browsers */
        url('assets/fonts/klima-regular-web.woff') format('woff'); /* Pretty Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KlimaItalic';
+  src: url('assets/fonts/klima-light-italic-web.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/klima-light-italic-web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/klima-light-italic-web.woff2') format('woff2'), /* Super Modern Browsers */
+       url('assets/fonts/klima-light-italic-web.woff') format('woff'); /* Pretty Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
@@ -202,6 +212,9 @@ a {
     }
     margin-right: 20px;
   }
+  &.photo-item {
+    padding: 10px;
+  }
   .item-content {
     vertical-align: middle;
     display: inline-block;
@@ -214,12 +227,16 @@ a {
 }
 #footer {
   padding: 15px 0 25px 0;
-  min-height: 20vh;
+  min-height: 15vh;
   bottom: 0;
   background-color: @base;
-  p, a {
+  p, a, h2 {
     color: @text;
     display: block;
+  }
+  img {
+    height: 15px;
+    margin-bottom: 10px;
   }
 }
 .item-list li {
@@ -246,4 +263,7 @@ a {
 }
 .guides {
   text-align: center;
+}
+.secgen-letter p {
+  font-family: @italics-font;
 }
