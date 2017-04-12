@@ -92,7 +92,7 @@ a {
   background: transparent;
 }
 #marketing {
-  background: url("assets/background.JPG") no-repeat top;
+  background: url("assets/background.JPG") no-repeat center top;
   background-size: cover;
 }
 @media (min-width: 760px) {
@@ -280,4 +280,20 @@ body {
 }
 .col-md-8 > h2 {
   text-align: center;
+}
+#marketing .blackened {
+  background: fade(@base, 80%);
+  #jumbo {
+    text-align: left;
+    .jumbo-text-small {
+      padding-bottom: 0;
+    }
+    h3 {
+      margin-top: 10px;
+    }
+  }
+  min-height: 100vh;
+}
+.white {
+  color: white;
 }
