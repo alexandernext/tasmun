@@ -35,8 +35,14 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  overflow: auto;
+  height: 100%;
+}
 body {
   background-color: @base;
+  overflow: auto;
+  height: 100%;
 }
 * {
   font-family: @text-font;
@@ -102,6 +108,10 @@ a {
     ul li a {
       padding: 5px;
     }
+      margin-top: 5px;
+  }
+  .navbar-nav > li > button {
+    margin-top: 30px;
   }
   #jumbo {
     padding-top: 50px;
@@ -260,11 +270,26 @@ a {
   display: inline-block;
 }
 .modal {
-  background-color: @back;
-  min-height: 60vh;
+  background: @back;
+  min-height: 30vh;
   padding: 30px;
-  margin: 15vh;
-  z-index: 10000
+  margin: 15vh 15vw;
+  h1 {
+    line-height: 0.8;
+  }
+}
+@media (max-width: 600px) {
+  .modal {
+    margin: 0;
+    h1 {
+      font-size: 55px;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .modal {
+  margin: 300px 300px;
+}
 }
 .guides {
   text-align: center;
@@ -279,7 +304,7 @@ body {
   font-weight: 700;
 }
 #marketing .blackened {
-  background: fade(@base, 75%);
+  background: fade(@base, 65%);
   #jumbo {
     text-align: left;
     .jumbo-text-small {
@@ -290,9 +315,44 @@ body {
     }
   }
 }
+#donation .blackened {
+  background: fade(darken(@base, 20%), 65%);
+}
 #marketing .blackened-large {
   min-height: 100vh;
 }
 .white {
   color: white;
+}
+/* unset bs3 setting */
+.modal-open {
+ overflow: auto;
+}
+.dark {
+  color: @text-dark;
+}
+#donation.modal {
+  background: url("assets/demo-hela.webp") no-repeat;
+  background-size: cover;
+  padding: 0;
+  .blackened {
+    padding: 25px;
+    height: 100%;
+    width: 100%;
+  }
+  h1 {
+    margin-bottom: 15px;
+  }
+  h3 {
+    margin-top: 0;
+  }
+  h5 {
+    margin-bottom: 5px;
+  }
+}
+a:hover, a:focus, a:active, a:active:focus {
+  color: darken(@secondary, 10%);
+}
+.modal-backdrop.in {
+  opacity: 0.8;
 }
