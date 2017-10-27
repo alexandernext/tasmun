@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+  <body id="marketing">
+    <div>
+      <div class="blackened blackened-large">
+    {% include navigation-split-home.html %}
+        <div id="jumbo">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="jumbo-text jumbo-text-small">
+                  <h1 class="marginless bottomless"><span>{{ page.title }}</span></h1>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                {{content}}
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  {% include footer.html %}
+  </body>
+</html>
