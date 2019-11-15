@@ -1,37 +1,42 @@
 // out: main.css, sourcemap: true, compress: true
-@base: #22313F;
-@secondary: #EF4836;
+@base: #22313f;
+@secondary: #ef4836;
 @text: white;
 @text-dark: @base;
 @back: #fcfcfc;
-@headline-font: 'Graph', serif;
-@text-font: 'Klima', sans-serif;
-@bold-font: 'KlimaMedium', sans-serif;
+@headline-font: "Graph", serif;
+@text-font: "Klima", sans-serif;
+@bold-font: "KlimaMedium", sans-serif;
 
 @font-face {
-  font-family: 'Klima';
-  src: url('assets/fonts/klima-regular-web.eot'); /* IE9 Compat Modes */
-  src: url('assets/fonts/klima-regular-web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('assets/fonts/klima-regular-web.woff2') format('woff2'), /* Super Modern Browsers */
-       url('assets/fonts/klima-regular-web.woff') format('woff'); /* Pretty Modern Browsers */
+  font-family: "Klima";
+  src: url("assets/fonts/klima-regular-web.eot"); /* IE9 Compat Modes */
+  src: url("assets/fonts/klima-regular-web.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("assets/fonts/klima-regular-web.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("assets/fonts/klima-regular-web.woff")
+      format("woff"); /* Pretty Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'KlimaMedium';
-  src: url('assets/fonts/klima-medium-web.eot'); /* IE9 Compat Modes */
-  src: url('assets/fonts/klima-medium-web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('assets/fonts/klima-medium-web.woff2') format('woff2'), /* Super Modern Browsers */
-       url('assets/fonts/klima-medium-web.woff') format('woff'); /* Pretty Modern Browsers */
+  font-family: "KlimaMedium";
+  src: url("assets/fonts/klima-medium-web.eot"); /* IE9 Compat Modes */
+  src: url("assets/fonts/klima-medium-web.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("assets/fonts/klima-medium-web.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("assets/fonts/klima-medium-web.woff")
+      format("woff"); /* Pretty Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Graph';
-  src: url('assets/fonts/graph-bold-web.eot'); /* IE9 Compat Modes */
-  src: url('assets/fonts/graph-bold-web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('assets/fonts/graph-bold-web.woff2') format('woff2'), /* Super Modern Browsers */
-       url('assets/fonts/graph-bold-web.woff') format('woff'); /* Pretty Modern Browsers */
+  font-family: "Graph";
+  src: url("assets/fonts/graph-bold-web.eot"); /* IE9 Compat Modes */
+  src: url("assets/fonts/graph-bold-web.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("assets/fonts/graph-bold-web.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("assets/fonts/graph-bold-web.woff")
+      format("woff"); /* Pretty Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
@@ -51,7 +56,10 @@ body {
 b {
   font-family: @bold-font;
 }
-h1, h2, h1 > *, h2 > * {
+h1,
+h2,
+h1 > *,
+h2 > * {
   font-family: @headline-font;
 }
 h1 {
@@ -98,17 +106,18 @@ a {
   background: transparent;
 }
 #marketing {
-  background: url("assets/background.JPG") no-repeat center top;
+  background: url("assets/background2020.JPG") no-repeat center top;
   background-size: cover;
 }
 @media (min-width: 760px) {
-  .navbar-nav>li>a, .navbar-nav>li>p {
+  .navbar-nav > li > a,
+  .navbar-nav > li > p {
     padding-top: 35px;
     padding-bottom: 5px;
     ul li a {
       padding: 5px;
     }
-      margin-top: 5px;
+    margin-top: 5px;
   }
   .navbar-nav > li > button {
     margin-top: 30px;
@@ -151,10 +160,14 @@ a {
   font-family: @headline-font;
   border: 2px solid @secondary;
   padding: 5px 20px;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
-.btn-info:hover, .btn-info:active, .btn-info:active:focus, .btn-info:focus, .btn-info:active:hover {
+.btn-info:hover,
+.btn-info:active,
+.btn-info:active:focus,
+.btn-info:focus,
+.btn-info:active:hover {
   background-color: lighten(@secondary, 10%);
   color: @text;
   border: 2px solid lighten(@secondary, 10%);
@@ -170,34 +183,45 @@ a {
   background: transparent;
   border: none;
   color: @text;
-    .navbar-brand {
-      padding: 10px;
+  .navbar-brand {
+    padding: 10px;
 
-      .logo {
-        height: 50px;
-      }
+    .logo {
+      height: 50px;
     }
-   .navbar-text {
-     color: @text;
-   }
-   .navbar-nav li a, .navbar-nav>li>p {
-     color: @text;
-     font-size: 18px;
-   }
-   .navbar-nav>li>a:hover, .navbar-nav>li>a:active, .navbar-nav>li>a:focus, .navbar-nav>li>a:active:focus {
-     color: @text;
-     text-decoration: underline;
-   }
-   .navbar-nav>.open>a.dropdown-toggle, .navbar-nav>.open>a.dropdown-toggle:hover, .navbar-nav>.open>a.dropdown-toggle:active, .navbar-nav>.open>a.dropdown-toggle:focus, .navbar-nav>.open>a.dropdown-toggle:active:focus {
-     background-color: transparent;
-     color: @secondary;
-   }
-   .navbar-nav > .open > .dropdown-menu {
-     background-color: @base;
-     li>a:hover, li>a:focus, li>a:active, li>a:active:focus {
-       background-color: @secondary;
-     }
-   }
+  }
+  .navbar-text {
+    color: @text;
+  }
+  .navbar-nav li a,
+  .navbar-nav > li > p {
+    color: @text;
+    font-size: 18px;
+  }
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:active,
+  .navbar-nav > li > a:focus,
+  .navbar-nav > li > a:active:focus {
+    color: @text;
+    text-decoration: underline;
+  }
+  .navbar-nav > .open > a.dropdown-toggle,
+  .navbar-nav > .open > a.dropdown-toggle:hover,
+  .navbar-nav > .open > a.dropdown-toggle:active,
+  .navbar-nav > .open > a.dropdown-toggle:focus,
+  .navbar-nav > .open > a.dropdown-toggle:active:focus {
+    background-color: transparent;
+    color: @secondary;
+  }
+  .navbar-nav > .open > .dropdown-menu {
+    background-color: @base;
+    li > a:hover,
+    li > a:focus,
+    li > a:active,
+    li > a:active:focus {
+      background-color: @secondary;
+    }
+  }
 }
 .item {
   display: block;
@@ -246,7 +270,9 @@ a {
   min-height: 15vh;
   bottom: 0;
   background-color: @base;
-  p, a, h2 {
+  p,
+  a,
+  h2 {
     color: @text;
     display: block;
   }
@@ -288,8 +314,8 @@ a {
 }
 @media (min-width: 1000px) {
   .modal {
-  margin: 200px 300px;
-}
+    margin: 200px 300px;
+  }
 }
 .guides {
   text-align: center;
@@ -326,7 +352,7 @@ body {
 }
 /* unset bs3 setting */
 .modal-open {
- overflow: auto;
+  overflow: auto;
 }
 .dark {
   color: @text-dark;
@@ -351,7 +377,10 @@ body {
     margin-bottom: 5px;
   }
 }
-a:hover, a:focus, a:active, a:active:focus {
+a:hover,
+a:focus,
+a:active,
+a:active:focus {
   color: darken(@secondary, 10%);
 }
 .modal-backdrop.in {
