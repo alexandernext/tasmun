@@ -155,12 +155,17 @@ a {
 }
 
 @media (max-width: 760px) {
+  body {
+    background-color: #22313f;
+  }
+
   #footer {
     display: none;
   }
 
   #jumbo {
     padding-bottom: 0px;
+    margin-bottom: 35px;
   }
 
   #marketing {
@@ -181,9 +186,10 @@ a {
 
   .jumbo-text h1 {
     position: absolute;
-    bottom: 0px;
+    bottom: -35px;
     left: 10px;
     right: 10px;
+    font-size: 35px;
   }
 }
 
