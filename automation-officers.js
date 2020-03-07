@@ -28,18 +28,19 @@ Topics
 Combating Violence and Discrimination Against Women (SDG 5)
 Addressing Human Rights Abuses Against Uighurs in Xinjiang (SDG 16)
 Addressing Violence and Human Rights Violations in Hong Kong (SDG 16)
+Protecting the Rights of Journalistic Reporters and Aid Workers in Conflict Zones (SDG 16)
 
 ECOSOC (Economic and Social Council) DSG Ryan Kuo
 Student Officers
 Chair- Emma Kuok (Taipei American School)
-Chair- Darren Tsang (Taipei american School)
+Chair- Vivian Weng (Taipei american School)
 Chair- Connie Lee (Taipei American School)
 Chair- Hector Liu (Taipei American School)
 Topics
 Addressing the Social and Economic Impacts of Technological Competition (SDG 16)
 Measures to Effectively Distribute Microloans to Women in the Developing World (SDG 5)
 Developing Measures to Ensure Food Security and Adequate Nutrition for All (SDG 2)
-
+Mitigating the Impacts of Global Debt Crises (SDG 8)
 United Nations Environment Programme (UNEP) (larger one) DSG Dokyong Ryoo
 Student Officers
 Chair- Heather Park (Taipei American School)
@@ -51,7 +52,7 @@ Examining the Necessity for a Global Policy Addressing Climate Change (SDG 17)
 United Nations Development Programme (UNDP) (double if needed) DSG Dokyong Ryoo
 Student Officers
 Chair- Kosuke Ito (Taipei American School)
-Co-Chair- Yunseo Heo (St. Johnsbury Academy Jeju)
+Co-Chair- Audrey Hsieh(Taipei American School)
 Co-Chair- Esther Duann (Pacific American School)
 Topics
 Establishing Global Partnerships to Combat Corruption and Promote Transparency (SDG 17)
@@ -107,7 +108,7 @@ United Nations Security Council (UNSC) DSG Dokyong Ryoo
 Student Officers
 Chair- Naman Sharma (Taipei American School)
 Co-Chair- Mehek Berry (Taipei American School)
-Co-Chair- Vivian Weng (Taipei American school)
+Co-Chair- Darren Tsang (Taipei American School)
 Topics
 The Situation in Afghanistan
 The Situation in Syria
@@ -118,8 +119,7 @@ Chair- Emma Liu (Taipei American School)
 Co-Chair- Joseph Chang (Taipei American School)
 Co-Chair- Tyler Liu (Taipei American School)
 Topic
-Cuban Missile Crisis (October 16th, 1962)
-`;
+Cuban Missile Crisis (October 16th, 1962)`;
 
 const getShortenedName = name => {
   name = name.substring(name.indexOf("- ") + 2);
