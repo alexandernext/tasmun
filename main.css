@@ -111,7 +111,7 @@ a {
 }
 
 #marketing {
-  background: url("assets/background2020.JPG") no-repeat right center;
+  background: url("assets/teamphoto.JPG") no-repeat right center;
   background-size: contain;
 }
 
@@ -169,7 +169,7 @@ a {
   }
 
   #marketing {
-    background: url("assets/background2020.JPG") no-repeat center center;
+    background: url("assets/teamphoto.JPG") no-repeat center center;
     background-size: contain;
     background-position-y: 35px;
   }
